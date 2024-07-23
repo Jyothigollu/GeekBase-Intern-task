@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#game-controls {
+    margin-bottom: 20px;
+}
+
+#game-controls label, #game-controls input, #game-controls button {
+    margin-right: 10px;
+}
+
+#game-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    position: relative;
+}
+
+.peg {
+    width: 200px;
+    height: 250px;
+    position: relative;
+}
+
+.peg-rod {
+    width: 10px;
+    height: 230px;
+    background-color: #333;
+    position: absolute;
+    bottom: 20px;
+    left: 95px;
+}
+
+.peg-base {
+    width: 180px;
+    height: 20px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+.peg-label {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.disk {
+    height: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: move;
+    transition: bottom 0.3s ease;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
