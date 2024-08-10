@@ -121,3 +121,74 @@ span{
 .btn:hover{
     box-shadow: none;
 }
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bf-color);
+}
+.about-img img{
+    width: 35vw;
+}
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.about-content h2{
+    text-align: center;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 1.6rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+.internships h2{
+    margin-bottom: 5rem;
+}
+.intern-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.intern-container .intern-box{
+    flex: 1 1 30rem;
+    background: var(--snd-bf-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+.intern-container .intern-box:hover{
+    border-radius: var(--main-color);
+    transition: scale(1.02);
+}
+.intern-box i{
+    font-size:7rem;
+    color: var(--main-color);
+}
+.intern-box h3{
+    font-size: 2.6rem;
+}
+.intern-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.projects{
+    background: var(--snd-bf-color);
+}
+.protfolio h2{
+    margin-bottom: 4rem;
+}
+.protfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
